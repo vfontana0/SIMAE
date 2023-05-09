@@ -9,7 +9,6 @@
 plugins {
     // Apply the java-library plugin for API and implementation separation.
     id 'java-library'
-    id 'org.openjfx.javafxplugin' version "0.0.10"
     id 'application'
     id 'java'
     id("com.github.johnrengelman.shadow") version "7.1.0"
@@ -34,23 +33,6 @@ repositories {
 def javaFxVersion = 11
 
 dependencies {
-
-    implementation group: 'org.openjfx', name: 'javafx-base', version: javaFxVersion, classifier: 'win'
-    implementation group: 'org.openjfx', name: 'javafx-base', version: javaFxVersion, classifier: 'mac'
-    implementation group: 'org.openjfx', name: 'javafx-base', version: javaFxVersion, classifier: 'linux'
-    implementation group: 'org.openjfx', name: 'javafx-controls', version: javaFxVersion, classifier: 'win'
-    implementation group: 'org.openjfx', name: 'javafx-controls', version: javaFxVersion, classifier: 'mac'
-    implementation group: 'org.openjfx', name: 'javafx-controls', version: javaFxVersion, classifier: 'linux'
-    implementation group: 'org.openjfx', name: 'javafx-fxml', version: javaFxVersion, classifier: 'win'
-    implementation group: 'org.openjfx', name: 'javafx-fxml', version: javaFxVersion, classifier: 'mac'
-    implementation group: 'org.openjfx', name: 'javafx-fxml', version: javaFxVersion, classifier: 'linux'
-    implementation group: 'org.openjfx', name: 'javafx-graphics', version: javaFxVersion, classifier: 'win'
-    implementation group: 'org.openjfx', name: 'javafx-graphics', version: javaFxVersion, classifier: 'mac'
-    implementation group: 'org.openjfx', name: 'javafx-graphics', version: javaFxVersion, classifier: 'linux'
-
-    implementation 'info.picocli:picocli:4.6.3'
-    annotationProcessor 'info.picocli:picocli-codegen:4.6.3'
-
     implementation project(':simae-languages')
     // Use JUnit Jupiter for testing.
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1'
