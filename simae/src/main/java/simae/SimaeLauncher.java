@@ -1,13 +1,10 @@
 package simae;
 
 import simae.lib.Lenguaje;
-import simae.lib.Simae;
 import java.util.*;
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.StandardCopyOption;
 import simae.lib.AnotacionMarca;
+import simae.lib.Simae;
 
 public class SimaeLauncher {
 
@@ -19,9 +16,6 @@ public class SimaeLauncher {
     PrintWriter workWriter = null;
     File workFile = null;
 
-    public static String getVERSION() {
-        return VERSION;
-    }
 
     public static Lenguaje lenguaje(String lenguajeString) {
         switch(lenguajeString) {
