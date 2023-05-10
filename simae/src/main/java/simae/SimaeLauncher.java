@@ -16,12 +16,11 @@ public class SimaeLauncher {
 
     public static Lenguaje lenguaje(String lenguajeString) {
         switch(lenguajeString) {
-            case "c++":
+            case ".cpp":
                 return Lenguaje.CPLUSPLUS;
-            case "java":
-            case "java8":
+            case ".java":
                 return Lenguaje.JAVA8;
-            case "python3":
+            case ".py":
                 return Lenguaje.PYTHON3;
             default:
                 System.out.println("Lenguaje invalido");
@@ -30,14 +29,12 @@ public class SimaeLauncher {
     }
     
     public boolean prepareSimae(File inputFile) {
-
         try {
             inputReader = new BufferedReader(new FileReader(inputFile));
         } catch (IOException e) {
             System.out.println("Fallo algo en los argumentos");
             return false;
         }
-
         return true;
     }
 
