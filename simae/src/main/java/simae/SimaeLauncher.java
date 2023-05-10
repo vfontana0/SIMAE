@@ -13,9 +13,6 @@ public class SimaeLauncher {
     }
 
     BufferedReader inputReader = null;
-    PrintWriter workWriter = null;
-    File workFile = null;
-
 
     public static Lenguaje lenguaje(String lenguajeString) {
         switch(lenguajeString) {
@@ -36,8 +33,6 @@ public class SimaeLauncher {
 
         try {
             inputReader = new BufferedReader(new FileReader(inputFile));
-            workFile = new File(inputFile.getPath() + ".work");
-            workWriter = new PrintWriter(new FileWriter(workFile));
         } catch (IOException e) {
             System.out.println("Fallo algo en los argumentos");
             return false;
