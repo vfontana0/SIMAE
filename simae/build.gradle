@@ -44,5 +44,5 @@ tasks.named('test') {
 }
 
 application {
-    mainClass = 'simae.cli.CommandLineInterface'
+    mainClass = 'simae.API'
 }

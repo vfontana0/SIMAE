@@ -1,10 +1,11 @@
-package simae.cli;
-import java.io.*;
-import java.util.List;
-import simae.SimaeLauncher;
+package simae;
+
 import simae.lib.AnotacionMarca;
 
-public class CommandLineInterface {
+import java.io.File;
+import java.util.List;
+
+public class API {
 
 	public static void main(String[] args) {
 		String filename = args[0];

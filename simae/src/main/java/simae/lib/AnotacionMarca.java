@@ -48,7 +48,12 @@ public class AnotacionMarca implements Comparable<AnotacionMarca> {
 	
 	@Override
 	public String toString() {
+		//return  getFila() + " " + getInicioComentario() + " " + getFinComentario() + " " + getMarca();
 		return  getFila() + " " + getMarca();
+				//ej: 10 5 7 CIERRA EN LINEA 10
+		/*
+		Si esta entre la columna 5 y
+		 */
 	}
 	
 	public String getTexto() {
